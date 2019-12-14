@@ -1,0 +1,19 @@
+{
+  "name": "stream-tweet",
+  "version": "1.0.0",
+  "description": "Byjus Assignment",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/workrahul22/streem-tweet.git"
+  },
+  "author": "Rahul Ranjan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/workrahul22/streem-tweet/issues"
+  },
+  "homepage": "https://github.com/workrahul22/streem-tweet#readme"
+}
