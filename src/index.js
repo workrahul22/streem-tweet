@@ -1,12 +1,12 @@
 const cluster = require('cluster');
 const os = require('os');
-const app = require('app.js');
+const app = require('./app.js');
 
 if(cluster.isMaster){
     // If master create number of worker process equal to the number of core of the system
-    let numWorker = os.cpus().length();
+    let numWorker = os.cpus().length;
     console.log(numWorker); 
-    for(let i=0;i<numCpu;i++){
+    for(let i=0;i<numWorker;i++){
         cluster.fork();
     }
 

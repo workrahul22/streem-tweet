@@ -1,8 +1,17 @@
-FROM node:latest
+#Specify a base image
+FROM node:alpine
 
-WORKDIR /app
-COPY . .
+#Specify a working directory
+WORKDIR /usr/app
 
-RUN npm install
+#Copy the dependencies file
+COPY ./package.json ./
 
-CMD node src/index.js
+#Install dependencies
+RUN npm install 
+
+#Copy remaining files
+COPY ./ ./
+
+#Default command
+CMD ["npm","start"]
